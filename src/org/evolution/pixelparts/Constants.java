@@ -7,34 +7,6 @@ package org.evolution.pixelparts;
 
 public class Constants {
 
-    // Battery info
-    public static final String KEY_BATTERY_INFO_REFRESH = "battery_info_refresh";
-    public static final String KEY_CAPACITY_STATUS = "capacity_status";
-    public static final String KEY_TECHNOLOGY = "technology";
-    public static final String KEY_USB_TYPE = "usb_type";
-    public static final String KEY_TEMPERATURE = "temperature";
-    public static final String KEY_TEMPERATURE_UNIT = "temperature_unit";
-    public static final String KEY_CAPACITY_LEVEL = "capacity_level";
-    public static final String KEY_CURRENT = "current";
-    public static final String KEY_VOLTAGE = "voltage";
-    public static final String KEY_WATTAGE = "wattage";
-    public static final String KEY_HEALTH = "health";
-    public static final String KEY_MANUFACTURING_DATE = "manufacturing_date";
-    public static final String KEY_FIRST_USAGE_DATE = "first_usage_date";
-    public static final String KEY_CYCLE_COUNT = "cycle_count";
-    public static final String NODE_TECHNOLOGY = "/sys/class/power_supply/battery/technology";
-    public static final String NODE_STATUS = "/sys/class/power_supply/battery/status";
-    public static final String NODE_USB_TYPE = "/sys/class/power_supply/usb/usb_type";
-    public static final String NODE_TEMPERATURE = "/sys/class/power_supply/battery/temp";
-    public static final String NODE_CAPACITY = "/sys/class/power_supply/battery/capacity";
-    public static final String NODE_CAPACITY_LEVEL = "/sys/class/power_supply/battery/capacity_level";
-    public static final String NODE_CURRENT = "/sys/class/power_supply/battery/current_now";
-    public static final String NODE_VOLTAGE = "/sys/class/power_supply/battery/voltage_now";
-    public static final String NODE_HEALTH = "/sys/class/power_supply/battery/health";
-    public static final String NODE_MANUFACTURING_DATE = "/sys/class/power_supply/battery/manufacturing_date";
-    public static final String NODE_FIRST_USAGE_DATE = "/sys/class/power_supply/battery/first_usage_date";
-    public static final String NODE_CYCLE_COUNT = "/sys/class/power_supply/battery/cycle_count";
-
     // Charge control
     public static final String KEY_CHARGE_CONTROL = "charge_control";
     public static final String KEY_STOP_CHARGING = "stop_charging";
@@ -63,8 +35,4 @@ public class Constants {
     // Saturation
     public static final String KEY_SATURATION = "saturation";
     public static final String KEY_SATURATION_PREVIEW = "saturation_preview";
-
-    // Fast charge
-    public static final String KEY_FAST_CHARGE = "fast_charge";
-    public static final String NODE_FAST_CHARGE = "/sys/kernel/fast_charge/force_fast_charge";
 }

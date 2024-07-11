@@ -13,9 +13,6 @@ import org.evolution.pixelparts.autohbm.AutoHbmActivity;
 import org.evolution.pixelparts.autohbm.AutoHbmFragment;
 import org.evolution.pixelparts.autohbm.AutoHbmTileService;
 import org.evolution.pixelparts.chargecontrol.ChargeControlFragment;
-import org.evolution.pixelparts.fastcharge.FastChargeActivity;
-import org.evolution.pixelparts.fastcharge.FastChargeFragment;
-import org.evolution.pixelparts.fastcharge.FastChargeTileService;
 import org.evolution.pixelparts.pixeltorch.PixelTorchActivity;
 import org.evolution.pixelparts.pixeltorch.PixelTorchFragment;
 import org.evolution.pixelparts.pixeltorch.PixelTorchButtonService;
@@ -48,21 +45,6 @@ public class Startup extends BroadcastReceiver {
         // Charge control
         ChargeControlFragment.restoreStartChargingSetting(context);
         ChargeControlFragment.restoreStopChargingSetting(context);
-
-        // Fast charge
-        FastChargeFragment.restoreFastChargeSetting(context);
-
-        ComponentUtils.toggleComponent(
-                context,
-                FastChargeActivity.class,
-                FileUtils.fileExists(Constants.NODE_FAST_CHARGE)
-        );
-
-        ComponentUtils.toggleComponent(
-                context,
-                FastChargeTileService.class,
-                FileUtils.fileExists(Constants.NODE_FAST_CHARGE)
-        );
 
         // PixelTorch
         ComponentUtils.toggleComponent(
