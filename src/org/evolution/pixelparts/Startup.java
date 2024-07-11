@@ -66,6 +66,7 @@ public class Startup extends BroadcastReceiver {
         );
 
         // Saturation
-        SaturationFragment.restoreSaturationSetting(context);
+        SaturationFragment saturationFragment = new SaturationFragment();
+        saturationFragment.restoreSaturationSetting(context);
     }
 }

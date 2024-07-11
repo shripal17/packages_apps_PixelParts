@@ -8,6 +8,10 @@ package org.evolution.pixelparts.saturation;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.IBinder;
+import android.os.Parcel;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -23,13 +27,12 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.android.settingslib.widget.LayoutPreference;
 
-import java.io.IOException;
-import java.util.Arrays;
-
 import org.evolution.pixelparts.Constants;
 import org.evolution.pixelparts.CustomSeekBarPreference;
 import org.evolution.pixelparts.R;
 import org.evolution.pixelparts.utils.TileUtils;
+
+import java.util.Arrays;
 
 public class SaturationFragment extends PreferenceFragmentCompat
         implements Preference.OnPreferenceChangeListener {
@@ -42,6 +45,8 @@ public class SaturationFragment extends PreferenceFragmentCompat
     private View[] mViewPagerImages;
 
     private CustomSeekBarPreference mSaturationPreference;
+
+    private IBinder mSurfaceFlinger;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -89,7 +94,7 @@ public class SaturationFragment extends PreferenceFragmentCompat
         }
     }
 
-    public static void updateSaturation(int seekBarValue) {
+    public void updateSaturation(int seekBarValue) {
         float saturation;
         if (seekBarValue == 100) {
             saturation = 1.001f;
@@ -97,14 +102,26 @@ public class SaturationFragment extends PreferenceFragmentCompat
             saturation = seekBarValue / 100.0f;
         }
 
-        try {
-            Runtime.getRuntime().exec("service call SurfaceFlinger 1022 f " + saturation);
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (mSurfaceFlinger != null) {
+            try {
+                Parcel data = Parcel.obtain();
+                data.writeInterfaceToken("android.ui.ISurfaceComposer");
+                data.writeFloat(saturation);
+                mSurfaceFlinger.transact(1022, data, null, 0);
+                data.recycle();
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    public static void restoreSaturationSetting(Context context) {
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mSurfaceFlinger = ServiceManager.getService("SurfaceFlinger");
+    }
+
+    public void restoreSaturationSetting(Context context) {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         int seekBarValue = sharedPrefs.getInt(Constants.KEY_SATURATION, 100);
         updateSaturation(seekBarValue);
