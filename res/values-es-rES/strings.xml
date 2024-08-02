@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023-2024 The Evolution X Project
+                   2016-2022 crDroid Android Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- PixelParts -->
+    <string name="pixel_parts_title">Ajustes del Pixel</string>
+    <string name="kernel_node_access_error">¡El acceso al nodo Kernel falló! Por favor, asegúrese de que la ruta proporcionada al atributo sysfs o procfs es exacta, de que tiene los permisos apropiados, y de que las políticas SELinux están correctamente configuradas.</string>
+    <string name="kernel_node_returned_value_unknown">No se encontró ningún recurso de cadena para el valor devuelto por el nodo.</string>
+    <string name="tile_add">Añadir tarjeta</string>
+    <string name="tile_added">Tarjeta añadida</string>
+    <string name="tile_not_added">Tarjeta no añadida</string>
+    <string name="tile_already_added">Tarjeta ya añadida</string>
+    <string name="tile_on">Activado</string>
+    <string name="tile_off">Desactivado</string>
+    <string name="tile_camera_in_use">Cámara en uso</string>
+    <!-- Charge control -->
+    <string name="charge_control_title">Control de carga basado en porcentaje</string>
+    <string name="charge_control_summary">Controlar cuando el dispositivo se detenga y comience a cargar</string>
+    <string name="charge_control_main_switch_title">Control de carga basado en porcentaje</string>
+    <string name="stop_charging_title">Detener la carga al</string>
+    <string name="stop_charging_summary">Detener la carga cuando se alcanza el porcentaje establecido</string>
+    <string name="start_charging_title">Comenzar la carga en porcentaje específico</string>
+    <string name="start_charging_summary">Reanudar la carga cuando se alcanza el porcentaje establecido</string>
+    <string name="stop_below_start_error">¡Ajuste final debe estar por encima del ajuste de inicio!</string>
+    <string name="start_above_stop_error">¡Ajuste de inicio debe estar por debajo del ajuste final!</string>
+    <string name="charge_control_footer_summary">El control de la carga puede interferir con la carga adaptativa.</string>
+    <!-- Pixel torch -->
+    <string name="pixel_torch_title">Linterna Pixel</string>
+    <string name="pixel_torch_summary">Un servicio configurable de tarjeta de linterna y botón de volumen</string>
+    <string name="pixel_torch_cycle_modes_title">Modos de ciclo</string>
+    <string name="pixel_torch_cycle_modes_summary">Ciclo entre niveles de intensidad predefinidos</string>
+    <string name="pixel_torch_state">Estado: %d</string>
+    <string name="pixel_torch_first_click_title">Primer clic</string>
+    <string name="pixel_torch_second_click_title">Segundo clic</string>
+    <string name="pixel_torch_third_click_title">Tercer clic</string>
+    <string name="pixel_torch_button_service_title">Servicio de botón de volumen</string>
+    <string name="pixel_torch_button_service_summary">Alternar la linterna píxel al presionar ambos botones de volumen simultáneamente</string>
+    <string name="pixel_torch_button_service_description">Este servicio de accesibilidad escucha los eventos de teclas, en concreto los botones de subir y bajar volumen, para activar la linterna Pixel. Este servicio no recopila ningún dato de su dispositivo.\n\nhabilitar el acceso directo \"Mantener tecla de volumen\" en esta página anulará el evento clave, haciendo que el servicio no funcione.\n\neste servicio no funcionará cuando la pantalla esté apagada mientras se reproduce audio (independientemente del dispositivo de salida).</string>
+    <!-- Auto hbm -->
+    <string name="auto_hbm_title">Modo de alto brillo automático</string>
+    <string name="auto_hbm_main_switch_title">Usar HBM automático</string>
+    <string name="auto_hbm_summary">Habilita la iluminación máxima basada en la luz del sol</string>
+    <string name="auto_hbm_threshold_title">Umbral de luz</string>
+    <string name="auto_hbm_threshold_summary">umbral (lux)</string>
+    <string name="auto_hbm_enable_time_title">Hora de activación</string>
+    <string name="auto_hbm_enable_time_summary">Duración en segundos que el umbral de luz debe ser alcanzado para activar HBM</string>
+    <string name="auto_hbm_disable_time_title">Hora de desactivación</string>
+    <string name="auto_hbm_disable_time_summary">Duración en segundos en los que se desactiva HBM si el nivel de luz cae por debajo del umbral establecido</string>
+    <!-- Saturation -->
+    <string name="saturation_title">Saturación</string>
+    <string name="saturation_summary">Controla el nivel de saturación de la pantalla</string>
+    <string name="saturation_footer_summary">Cambiar el modo de color en los ajustes de pantalla sobreescribirá el nivel de saturación, requiriendo ser establecido de nuevo.</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">por defecto</string>
+    <string name="custom_seekbar_default_value_to_set">Valor predeterminado: <xliff:g id="v">%s</xliff:g>\nMantén pulsado para establecer</string>
+    <string name="custom_seekbar_default_value_is_set">\"El valor predeterminado está establecido</string>
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Vista previa</string>
+    <string name="image_preview_next_page_content_description">Siguiente</string>
+    <string name="image_preview_previous_page_content_description">Anterior</string>
+</resources>
