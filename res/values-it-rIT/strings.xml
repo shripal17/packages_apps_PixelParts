@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023-2024 The Evolution X Project
+                   2016-2022 crDroid Android Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- PixelParts -->
+    <string name="pixel_parts_title">Pixel Parts</string>
+    <string name="kernel_node_access_error">Accesso al nodo kernel fallito! Assicurati che il percorso fornito per l\'attributo sysfs o procfs sia accurato, che abbia le autorizzazioni appropriate e che le politiche SELinux siano configurate correttamente.</string>
+    <string name="kernel_node_returned_value_unknown">Nessuna stringa trovata per il valore restituito dal nodo.</string>
+    <string name="tile_add">Aggiungi riquadro</string>
+    <string name="tile_added">Riquadro aggiunto</string>
+    <string name="tile_not_added">Riquadro non aggiunto</string>
+    <string name="tile_already_added">Riquadro già presente</string>
+    <string name="tile_on">Abilitato</string>
+    <string name="tile_off">Disabilitato</string>
+    <string name="tile_camera_in_use">Fotocamera in uso</string>
+    <!-- Charge control -->
+    <string name="charge_control_title">Controllo della ricarica basato sulla percentuale</string>
+    <string name="charge_control_summary">Controlla quando il dispositivo avvia o ferma la ricarica</string>
+    <string name="charge_control_main_switch_title">Controlla la ricarica sulla base della percentuale</string>
+    <string name="stop_charging_title">Livello di arresto ricarica</string>
+    <string name="stop_charging_summary">Ferma la ricarica quando viene raggiunta la percentuale impostata</string>
+    <string name="start_charging_title">Livello di inizio ricarica</string>
+    <string name="start_charging_summary">Riprendi la ricarica quando viene raggiunta la percentuale impostata</string>
+    <string name="stop_below_start_error">Il livello di arresto deve essere superiore al livello di avvio!</string>
+    <string name="start_above_stop_error">Il livello di avvio deve essere inferiore al livello di arresto!</string>
+    <string name="charge_control_footer_summary">Il controllo della carica può interferire con la ricarica adattativa.</string>
+    <!-- Pixel torch -->
+    <string name="pixel_torch_title">Torcia pixel</string>
+    <string name="pixel_torch_summary">Un servizio per un riquadro torcia e pulsante volume configurabili</string>
+    <string name="pixel_torch_cycle_modes_title">Modalità ciclo</string>
+    <string name="pixel_torch_cycle_modes_summary">Passa automaticamente tra le intensità impostate</string>
+    <string name="pixel_torch_state">Stato: %d</string>
+    <string name="pixel_torch_first_click_title">Primo click</string>
+    <string name="pixel_torch_second_click_title">Secondo click</string>
+    <string name="pixel_torch_third_click_title">Terzo click</string>
+    <string name="pixel_torch_button_service_title">Servizio pulsante volume</string>
+    <string name="pixel_torch_button_service_summary">Accendi/spegni la torcia pixel premendo entrambi i pulsanti del volume</string>
+    <string name="pixel_torch_button_service_description">Questo servizio di accessibilità percepisce gli eventi chiave, nello specifico i pulsanti volume su e giù, per attivare o disattivare la torcia pixel. Questo servizio non raccoglie alcun dato dal tuo dispositivo.\n\nAbilitare la scorciatoia \"Tieni premuto il tasto volume\" in questa pagina sovrascriverà l\'evento chiave, causando il mancato funzionamento del servizio.\n\nQuesto servizio non funzionerà quando lo schermo è spento e dell\'audio è in riproduzione (indipendentemente dal dispositivo di uscita).</string>
+    <!-- Auto hbm -->
+    <string name="auto_hbm_title">HBM automatica</string>
+    <string name="auto_hbm_main_switch_title">Usa HBM automatica</string>
+    <string name="auto_hbm_summary">Attiva automaticamente la modalità alta luminosità in base all\'intensità della luce solare (lux)</string>
+    <string name="auto_hbm_threshold_title">Soglia luminosità</string>
+    <string name="auto_hbm_threshold_summary">Definisci la soglia di intensità luminosa, in unità lux, alla quale si attiva l\'HBM</string>
+    <string name="auto_hbm_enable_time_title">Abilita orario</string>
+    <string name="auto_hbm_enable_time_summary">Durata in secondi in cui la soglia di luce deve essere costantemente soddisfatta per attivare HBM</string>
+    <string name="auto_hbm_disable_time_title">Disabilita orario</string>
+    <string name="auto_hbm_disable_time_summary">Durata in secondi per i quali HBM è disattivata se la soglia di luce scende al di sotto del livello impostato</string>
+    <!-- Saturation -->
+    <string name="saturation_title">Saturazione</string>
+    <string name="saturation_summary">Controlla il livello di saturazione del display</string>
+    <string name="saturation_footer_summary">La modifica della modalità colore nelle impostazioni schermo annulla il livello di saturazione e richiede una riapplicazione.</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valore: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">valore predefinito</string>
+    <string name="custom_seekbar_default_value_to_set">Valore predefinito: <xliff:g id="v">%s</xliff:g>\nTieni premuto per impostare</string>
+    <string name="custom_seekbar_default_value_is_set">Valore predefinito impostato</string>
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Anteprima</string>
+    <string name="image_preview_next_page_content_description">Avanti</string>
+    <string name="image_preview_previous_page_content_description">Indietro</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023-2024 The Evolution X Project
+                   2016-2022 crDroid Android Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- PixelParts -->
+    <string name="pixel_parts_title">Pixel součásti</string>
+    <string name="kernel_node_access_error">Přístup k uzlu jádra se nezdařil! Ujistěte se, že poskytnutá cesta k atributu sysfs nebo procfs je přesná, že má odpovídající oprávnění a SELinux zásady jsou správně nastaveny.</string>
+    <string name="kernel_node_returned_value_unknown">Pro hodnotu vrácenou uzlem nebyl nalezen žádný zdroj řetězce.</string>
+    <string name="tile_add">Přidat dlaždici</string>
+    <string name="tile_added">Dlaždice přidána</string>
+    <string name="tile_not_added">Dlaždice nebyla přidána</string>
+    <string name="tile_already_added">Dlaždice již byla přidána</string>
+    <string name="tile_on">Zapnuto</string>
+    <string name="tile_off">Vypnuto</string>
+    <string name="tile_camera_in_use">Fotoaparát se používá</string>
+    <!-- Charge control -->
+    <string name="charge_control_title">Ovládání nabíjení na základě procent</string>
+    <string name="charge_control_summary">Ovládat zařízení kdy se zastaví a začne nabíjet</string>
+    <string name="charge_control_main_switch_title">Ovládání nabíjení na základě procent</string>
+    <string name="stop_charging_title">Ukončit nabíjení</string>
+    <string name="stop_charging_summary">Zastavit nabíjení při dosažení nastaveného procenta</string>
+    <string name="start_charging_title">Spustit úroveň nabíjení</string>
+    <string name="start_charging_summary">Pokračovat v nabíjení po překročení nastaveného procenta</string>
+    <string name="stop_below_start_error">Úroveň zastavení musí být nad úrovní startu!</string>
+    <string name="start_above_stop_error">Úroveň zastavení musí být nad úrovní startu!</string>
+    <string name="charge_control_footer_summary">Řízení nabíjení může bránit adaptivnímu nabíjení.</string>
+    <!-- Pixel torch -->
+    <string name="pixel_torch_title">Pixel svítilna</string>
+    <string name="pixel_torch_summary">Služba konfigurovatelných dlaždic a tlačítek hlasitosti</string>
+    <string name="pixel_torch_cycle_modes_title">Režimy cyklu</string>
+    <string name="pixel_torch_cycle_modes_summary">Cyklus mezi předem stanovenými úrovněmi</string>
+    <string name="pixel_torch_state">Status: %d</string>
+    <string name="pixel_torch_first_click_title">První kliknutí</string>
+    <string name="pixel_torch_second_click_title">Druhé kliknutí</string>
+    <string name="pixel_torch_third_click_title">Třetí kliknutí</string>
+    <string name="pixel_torch_button_service_title">Služba tlačítek hlasitosti</string>
+    <string name="pixel_torch_button_service_summary">Přepnout Pixel svítilnu při současném stisku obou tlačítek hlasitosti</string>
+    <string name="pixel_torch_button_service_description">Tato služba přístupnosti poslouchá události klíče, konkrétně tlačítek hlasitosti nahoru a dolů pro přepnutí Pixel svítilny. Tato služba ze zařízení neshromažďuje žádná data.\n\nPovolení zástupce \"Držet klávesu Hlasitost\" na této stránce přepíše klíčovou událost, což způsobí, že služba nefunguje.\n\nTato služba nebude fungovat, když je obrazovka vypnuta při přehrávání zvuku (bez ohledu na výstupní zařízení).</string>
+    <!-- Auto hbm -->
+    <string name="auto_hbm_title">Automatické HBM</string>
+    <string name="auto_hbm_main_switch_title">Použít automatické HBM</string>
+    <string name="auto_hbm_summary">Automaticky povolit režim vysokého jasu na základě intenzity slunečního světla (lux)</string>
+    <string name="auto_hbm_threshold_title">Prahová hodnota jasu</string>
+    <string name="auto_hbm_threshold_summary">Definujte prahovou hodnotu intenzity světla v jednotkách luxů, při kterých je HBM aktivováno</string>
+    <string name="auto_hbm_enable_time_title">Povolit čas</string>
+    <string name="auto_hbm_enable_time_summary">Doba trvání v sekundách, kdy musí být prahová hodnota světla trvale plněna pro aktivaci HBM</string>
+    <string name="auto_hbm_disable_time_title">Zakázat čas</string>
+    <string name="auto_hbm_disable_time_summary">Doba trvání v sekundách, po kterou je HBM deaktivován, pokud prahová hodnota světla klesne pod nastavenou úroveň</string>
+    <!-- Saturation -->
+    <string name="saturation_title">Sytost</string>
+    <string name="saturation_summary">Nastavení úrovně sytosti displeje</string>
+    <string name="saturation_footer_summary">Změna režimu barev v nastavení displeje přepíše úroveň sytosti, která vyžaduje, aby byla znovu použita.</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Hodnota: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">výchozí hodnota</string>
+    <string name="custom_seekbar_default_value_to_set">Výchozí hodnota: <xliff:g id="v">%s</xliff:g>\nDlouhým klepnutím ji nastavíte</string>
+    <string name="custom_seekbar_default_value_is_set">Výchozí hodnota je nastavena</string>
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Náhled</string>
+    <string name="image_preview_next_page_content_description">Další</string>
+    <string name="image_preview_previous_page_content_description">Předchozí</string>
+</resources>
